@@ -1,0 +1,137 @@
+* {
+    margin:  0;
+    padding:  0;
+    box-sizing:  border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+   background: url(portfolio-images/header-background-mobile.jpg) no-repeat center center/ contain;
+   height: 100vh;
+
+    
+ }
+
+
+ .main-container {
+   position: absolute;
+   width: 375px;
+   height: 718px;
+   left: 0;
+   top: 0;
+}
+
+ section .section-1 {
+   display: flex;
+   justify-content: space-between;
+   padding:  0 1.3rem;
+}
+
+ .section-1 .logo {
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 1.5rem;
+   line-height: 20px;
+   
+
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   
+
+   color: #6070FF;
+
+ }
+
+ .section-1 .menu-icon {
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 1.5rem;
+   line-height: 20px;
+
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+
+   color: #6070FF;
+ }
+
+ section .section-2 {
+    height: 100vh;
+    background: url(portfolio-images/header-shapes\ mobile@2x.jpg) no-repeat center center/ contain;
+    padding: 10rem 1.3rem 0 1.3rem;
+ }
+
+ section .section-2 h2 {
+   width: 327px;
+   height: 150px;
+
+
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 52px;
+   
+
+   display: flex;
+   align-items: center;
+
+  
+
+   color: #172B4D;
+
+ }
+
+ section .section-2 p {
+   width: 327px;
+   height: 146px;
+
+
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+  
+
+   color: #344563;
+
+ }
+
+ section .section-2 h3 {
+   width: 135px;
+   height: 24px;
+
+  
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   margin-top: .5rem;
+   
+
+   color: #7F8CFF;
+ }
+
+ section .section-2 .social-container {
+   display: flex;
+   justify-content: space-between;
+   width: 60%;
+   margin: .5rem 0;
+   font-size: 1.5rem;
+
+   color: #505F79;
+ }
+
+
