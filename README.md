@@ -1,10 +1,10 @@
-# Portfolio: setup and mobile first
+# Project: Mobile portfolio complete template-1
 
 > For the second milestone in building your portfolio website,
 > you will create the mobile website section where you will list your portfolio projects.
 
 > set up a new repository and prepare it for development using best practices (e.g. linters).
-> build the 2 sections of the mobile website using the template you chose in the previous step.
+> build the 6 sections of the mobile website using the template you chose in the previous step.
 
 > This project is about setting up a mobile version
 
