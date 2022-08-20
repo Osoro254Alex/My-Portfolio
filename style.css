@@ -174,7 +174,7 @@ section .section-2 .social-container .icon {
   height: 80px;
 }
 
-.tonic-cont h1 {
+.tonic-cont h2 {
   width: 295px;
   height: 36px;
   font-family: var(--header-font);
@@ -292,7 +292,7 @@ section .section-2 .social-container .icon {
 }
 
 button:hover {
-  background-color: #6070ff;
+  background-color: #6070ff !important;
   transition: all 0.5s ease-in-out;
   color: #fff !important;
 }
@@ -309,6 +309,7 @@ button:hover {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: #fff;
   color: #396df2;
   border: none;
 }
@@ -325,6 +326,7 @@ button:hover {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: #fff;
   color: #396df2;
   border: none;
 }
@@ -460,6 +462,7 @@ button:hover {
   align-items: center;
   padding: 24px 12px;
   margin: 0 24px 0 24px;
+  gap: 3px;
   position: relative;
   width: 327px;
   height: 464.15px;
@@ -483,6 +486,7 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   padding: 12px;
+  gap: 12px;
   width: 327px;
   height: 320.15px;
   list-style: none;
@@ -506,6 +510,7 @@ button:hover {
   gap: 16px;
   font-family: var(--header-font);
   list-style: none;
+  color: #253858;
 }
 
 .subjects .htm {
@@ -518,6 +523,7 @@ button:hover {
   gap: 16px;
   font-family: var(--header-font);
   list-style: none;
+  color: #253858;
 }
 
 .subjects .cs {
@@ -530,6 +536,7 @@ button:hover {
   gap: 16px;
   font-family: var(--header-font);
   list-style: none;
+  color: #253858;
 }
 
 .framework {
@@ -552,6 +559,21 @@ button:hover {
   height: 24px;
   display: flex;
   align-items: center;
+}
+
+.line-1 {
+  width: 327px;
+  height: 1px;
+  background: #DFE1E6;
+  position: absolute;
+  bottom: 18.3%;
+}
+.line-2 {
+  width: 327px;
+  height: 1px;
+  background: #DFE1E6;
+  position: absolute;
+  bottom: 3%;
 }
 
 .skils {
@@ -674,6 +696,7 @@ form .btn-press {
   text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
+  background-color: #fff;
   border: none;
 }
 
