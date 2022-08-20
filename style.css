@@ -85,6 +85,17 @@ section .section-2 {
   align-items: flex-start;
 }
 
+.tonic-cont h2 {
+  width: 295px;
+  height: 36px;
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
 section .section-2 h2 {
   width: 327px;
   height: 150px;
@@ -172,17 +183,6 @@ section .section-2 .social-container .icon {
   gap: 12px;
   width: 295px;
   height: 80px;
-}
-
-.tonic-cont h2 {
-  width: 295px;
-  height: 36px;
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
 }
 
 .education {
@@ -564,14 +564,15 @@ button:hover {
 .line-1 {
   width: 327px;
   height: 1px;
-  background: #DFE1E6;
+  background: #dfe1e6;
   position: absolute;
   bottom: 18.3%;
 }
+
 .line-2 {
   width: 327px;
   height: 1px;
-  background: #DFE1E6;
+  background: #dfe1e6;
   position: absolute;
   bottom: 3%;
 }
