@@ -672,18 +672,6 @@ form textarea {
   height: 170px;
 }
 
-form .btn-press {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  width: 140px;
-  height: 48px;
-  background: #fff;
-  border-radius: 8px;
-  margin: 22px 211px 0 0;
-}
-
 .btn-press {
   width: 108px;
   height: 24px;
@@ -701,7 +689,19 @@ form .btn-press {
   border: none;
 }
 
-.btn-press:hover{
+form .btn-press {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 22px 211px 0 0;
+}
+
+.btn-press:hover {
   background-color: #6070ff !important;
   transition: all 0.5s ease-in-out;
   color: #fff !important;
