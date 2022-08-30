@@ -153,10 +153,14 @@ section .section-2 .social-container {
   height: 20px;
 }
 
-section .section-2 .social-container .icon {
+.social-container .icon {
+  list-style: none;
+}
+
+.icon a {
   font-size: 20px;
   color: #505f79;
-  list-style: none;
+  text-decoration: none;
 }
 
 /* Work Section */
@@ -600,113 +604,5 @@ button:hover {
   align-items: center;
 }
 
-.contact-me {
-  display: flex;
-  flex-direction: column;
-  border-top-left-radius: 65px;
-  height: 779px;
-  background: #6070ff;
-}
 
-.contact-cont {
-  border-top-left-radius: 65px;
-  height: 779px;
-  width: 375px;
-  padding: 113px 24px 45px 24px;
-  background: url(./portfolio-images/header-shapes\mobile.png) repeat -122px 5px/ cover;
-  display: flex;
-  flex-direction: column;
-}
 
-.contact-cont form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-cont h1 {
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-}
-
-.contact-cont .graph {
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
-}
-
-form .input-1 {
-  width: 327px;
-  height: 48px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  margin: 48px 0 20px 0;
-}
-
-form .input-2 {
-  width: 327px;
-  height: 48px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  margin: 0 0 18px 0;
-}
-
-form textarea {
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  width: 327px;
-  height: 170px;
-}
-
-form .btn-press {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  width: 140px;
-  height: 48px;
-  background: #fff;
-  border-radius: 8px;
-  margin: 22px 211px 0 0;
-}
-
-.btn-press #but {
-  width: 108px;
-  height: 24px;
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  background-color: #fff;
-  border: none;
-}
-
-footer div {
-  width: 135px;
-  height: 5px;
-  background: #0d151e;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 8px;
-  left: 30%;
-}
