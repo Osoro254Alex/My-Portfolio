@@ -1,10 +1,10 @@
 # Project: Mobile portfolio complete template-1
 
-> For the second milestone in building your portfolio website,
-> you will create the mobile website section where you will list your portfolio projects.
-
-> set up a new repository and prepare it for development using best practices (e.g. linters).
-> build the 6 sections of the mobile website using the template you chose in the previous step.
+> For the third milestone of your portfolio website,
+> Add a contact form to your portfolio and the portfolio of your coding partner.
+> Make sure that you guide your users' experience in a way that helps them fill in the form without frustration.
+> Prepare it for development using best practices (e.g. linters).
+> Build the 6 sections of the mobile website using the template you chose in the previous step.
 
 > This project is about setting up a mobile version
 
@@ -28,6 +28,8 @@
 - LinkedIN:[@Osoro254Alex](https://www.linkedin.com/feed/)
 
 ## Collaborators
+Rebecca Nabwire
+-GitHub[@Becky449](https://github.com/Becky449)
 
 ## 🤝 Contributing
 
