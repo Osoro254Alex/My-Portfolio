@@ -5,7 +5,7 @@
 }
 
 body {
-  min-width: 375px;
+  min-width: 100%;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto;
   width: 375px;
@@ -162,6 +162,11 @@ section .section-2 .social-container .icon {
   font-size: 20px;
   color: #505f79;
   list-style: none;
+}
+
+.icon a {
+  font-size: 20px;
+  color: #505f79;
 }
 
 /* Work Section */
@@ -674,19 +679,37 @@ button:hover {
 form .input-1 {
   width: 327px;
   height: 48px;
+  padding: 15px 16px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin: 48px 0 20px 0;
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
 }
 
 form .input-2 {
   width: 327px;
   height: 48px;
+  padding: 15px 16px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin: 0 0 18px 0;
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
 }
 
 form textarea {
@@ -695,6 +718,13 @@ form textarea {
   border-radius: 8px;
   width: 327px;
   height: 170px;
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  padding: 15px 16px;
 }
 
 .btn-press {
@@ -741,13 +771,17 @@ form .btn-press {
   }
 
   body {
-    width: 1440px;
+    width: 100%;
     height: auto;
     background: #f4f5f7;
   }
 
   body .main-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     grid-template-rows: auto auto auto auto;
   }
 
@@ -756,21 +790,30 @@ form .btn-press {
   }
 
   .container-1 {
-    width: 1440px;
+    width: 100%;
     height: 916px;
     background: #fff;
+    padding: 46px 8px 76.54px 34.6px;
   }
 
   header .section-1 {
-    width: 1440px;
+    width: 100%;
     height: 72px;
   }
 
   .section-1-inner {
     margin-top: 0;
-    width: 1440px;
+    width: 100%;
     height: 72px;
     display: flex;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .section-1 .logo-cont {
@@ -836,9 +879,8 @@ form .btn-press {
   }
 
   .cont-1-sec-2 {
-    width: 1397.4px;
+    width: 100%;
     height: 721.46px;
-    margin: 46px 8px 76.54px 34.6px;
     background-image: url(portfolio-images/Header-desktop.png);
     background-repeat: no-repeat;
     background-position: cover;
@@ -915,8 +957,8 @@ form .btn-press {
   /* Work Section */
 
   .work {
-    width: 1440px;
-    height: 2694px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -925,9 +967,9 @@ form .btn-press {
   }
 
   .container-first {
+    background: #fff;
     display: flex;
-    width: 1156px;
-    height: 496px;
+    width: 100%;
     border-radius: 8px;
     padding: 24px;
     gap: 22px;
@@ -935,7 +977,7 @@ form .btn-press {
 
   .container-first .img-container {
     border-radius: 8px;
-    width: 544px;
+    width: 100%;
     height: 448px;
   }
 
@@ -945,8 +987,8 @@ form .btn-press {
     align-items: flex-start;
     padding: 24px;
     gap: 24px;
-    width: 544px;
-    height: 445px;
+    width: 100%;
+    height: 100%;
   }
 
   .sec-content .tonic-cont {
@@ -955,7 +997,7 @@ form .btn-press {
     align-items: flex-start;
     padding: 0;
     gap: 12px;
-    width: 496px;
+    width: 100%;
     height: 98px;
   }
 
@@ -965,13 +1007,11 @@ form .btn-press {
     align-items: center;
     padding: 8px 0 8px 0;
     justify-content: space-between;
-    width: 297px;
-    height: 40px;
+    width: 60%;
   }
 
   .education h5 {
-    width: 75px;
-    height: 24px;
+    width: 100%;
     font-family: var(--header-font);
     font-style: normal;
     font-weight: 500;
@@ -1054,7 +1094,7 @@ form .btn-press {
   }
 
   #cose-con {
-    width: 316px;
+    width: 65%;
     height: 24px;
   }
 
@@ -1119,7 +1159,7 @@ form .btn-press {
 
   #mult {
     display: flex;
-    width: 1156px;
+    width: 100%;
     height: 496px;
     border-radius: 8px;
     padding: 24px;
@@ -1138,7 +1178,7 @@ form .btn-press {
 
   #mult .img-container {
     border-radius: 8px;
-    width: 544px;
+    width: 50%;
     height: 448px;
     order: 1;
     background-image: url(portfolio-images/desktop-2.png);
@@ -1155,7 +1195,7 @@ form .btn-press {
     align-items: flex-start;
     gap: 24px;
     padding: 24px;
-    width: 544px;
+    width: 50%;
     height: 465px;
     position: relative;
   }
@@ -1166,7 +1206,7 @@ form .btn-press {
     align-items: flex-start;
     padding: 0;
     gap: 12px;
-    width: 496px;
+    width: 100%;
     height: 98px;
   }
 
@@ -1205,10 +1245,10 @@ form .btn-press {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 0;
-    gap: 12px;
-    width: 320px;
-    height: 40px;
+    gap: 22px;
+    width: 345px;
   }
 
   .can {
@@ -1279,7 +1319,7 @@ form .btn-press {
   #desktop-2 {
     order: 2;
     display: flex;
-    width: 1156px;
+    width: 100%;
     height: 496px;
     border-radius: 8px;
     padding: 24px;
@@ -1340,7 +1380,7 @@ form .btn-press {
 
   #mult-last {
     display: flex;
-    width: 1156px;
+    width: 100%;
     height: 496px;
     border-radius: 8px;
     padding: 24px;
@@ -1376,11 +1416,12 @@ form .btn-press {
   /* About Myself section */
 
   .container-About {
-    width: 1440px;
+    width: 100%;
     height: 668px;
-    position: relative;
     background: #fff;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 142px;
   }
 
@@ -1390,13 +1431,13 @@ form .btn-press {
     align-items: flex-start;
     padding: 0;
     gap: 24px;
-    width: 447px;
+    width: 100%;
     height: 392px;
     margin: 142px 0 390px 142px;
   }
 
   .TOP h1 {
-    width: 447px;
+    width: 100%;
     height: 114px;
     font-family: var(--header-font);
     font-style: normal;
@@ -1409,7 +1450,7 @@ form .btn-press {
   }
 
   .TOP .para {
-    width: 447px;
+    width: 100%;
     height: 102px;
     font-family: var(--header-font);
     font-style: normal;
@@ -1425,7 +1466,7 @@ form .btn-press {
     align-items: flex-start;
     padding: 0;
     gap: 16px;
-    width: 200px;
+    width: 100%;
     height: 152px;
   }
 
@@ -1435,12 +1476,12 @@ form .btn-press {
     align-items: center;
     padding: 0;
     gap: 8px;
-    width: 118px;
+    width: 100%;
     height: 24px;
   }
 
   .society .conn h2 {
-    width: 118px;
+    width: 100%;
     height: 24px;
     font-family: var(--header-font);
     font-style: normal;
@@ -1457,7 +1498,7 @@ form .btn-press {
     gap: 22.29px;
     padding: 0;
     list-style: none;
-    width: 200px;
+    width: 100%;
     height: 40px;
   }
 
@@ -1620,13 +1661,13 @@ form .btn-press {
     display: flex;
     flex-direction: column;
     border-top-left-radius: 65px;
-    width: 1440px;
+    width: 100%;
     height: 846px;
     padding: 79.09px 74px 48.21px 75.34px;
   }
 
   .contact-cont {
-    width: 1290.66px;
+    width: 100%;
     height: 718.7px;
     background-image: url(portfolio-images/desktop-form.png);
     background-repeat: no-repeat;
