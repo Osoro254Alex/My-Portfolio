@@ -349,6 +349,12 @@ button:hover {
   border-radius: 8px;
 }
 
+.button-1 button:focus {
+    color: #FFFFFF;
+    background: #2230D2;
+    border: 1px solid #2230D2;
+  }
+
 /* Addional styling Work section on Mult-Post stories */
 #mult {
   width: 327px;
@@ -524,6 +530,13 @@ button:hover {
   border: 1px solid #fff;
   margin: 9px 0 9.72px 12px;
   list-style: none;
+}
+
+.subjects img:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid gray;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
 }
 
 .subjects .javascri {
@@ -984,6 +997,13 @@ form .btn-press {
     border-radius: 8px;
     padding: 24px;
     gap: 22px;
+  }
+  
+  .img-container:hover {
+    cursor: default;
+    transform: translateY(-5px);
+    border: 1px solid gray;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
   }
 
   .container-first .img-container {
