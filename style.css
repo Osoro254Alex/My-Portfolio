@@ -8,7 +8,6 @@ body {
   width: 375px;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto;
-  width: 375px;
   background: #f7f7f9;
 }
 
@@ -49,7 +48,6 @@ header .section-1 {
   color: #6070ff;
   text-decoration: none;
 }
-
 
 .info {
   display: none;
@@ -847,7 +845,7 @@ form .btn-press {
     from {
       transform: rotate(360deg);
     }
-  
+
     to {
       transform: rotate(90deg);
     }
