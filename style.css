@@ -5,7 +5,7 @@
 }
 
 body {
-  min-width: 100%;
+  width: 375px;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto;
   width: 375px;
@@ -49,6 +49,7 @@ header .section-1 {
   color: #6070ff;
   text-decoration: none;
 }
+
 
 .info {
   display: none;
@@ -310,7 +311,7 @@ button:hover {
 }
 
 .btn button {
-  width: 164px;
+  width: 169px;
   height: 48px;
   font-family: var(--header-font);
   font-style: normal;
@@ -329,7 +330,7 @@ button:hover {
 }
 
 .button-1 button {
-  width: 124px;
+  width: 130px;
   height: 48px;
   font-family: var(--header-font);
   font-style: normal;
@@ -838,6 +839,18 @@ form .btn-press {
     align-items: center;
     text-align: center;
     color: #6070ff;
+    animation-name: anime;
+    animation-duration: 3s;
+  }
+
+  @keyframes anime {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(90deg);
+    }
   }
 
   .nav-container {
@@ -977,8 +990,8 @@ form .btn-press {
 
   .container-first .img-container {
     border-radius: 8px;
-    width: 100%;
-    height: 448px;
+    width: 98%;
+    height: 440px;
   }
 
   .container-first .sec-content {
@@ -997,8 +1010,8 @@ form .btn-press {
     align-items: flex-start;
     padding: 0;
     gap: 12px;
-    width: 100%;
-    height: 98px;
+    width: 295px;
+    height: 80px;
   }
 
   .education {
@@ -1295,9 +1308,10 @@ form .btn-press {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 12px;
     border-radius: 8px;
-    width: 127px;
+    width: 147px;
     height: 48px;
     border: 1px solid #6070ff;
     font-family: var(--header-font);
