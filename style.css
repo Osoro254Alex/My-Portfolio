@@ -350,10 +350,10 @@ button:hover {
 }
 
 .button-1 button:focus {
-    color: #FFFFFF;
-    background: #2230D2;
-    border: 1px solid #2230D2;
-  }
+  color: #fff;
+  background: #2230d2;
+  border: 1px solid #2230d2;
+}
 
 /* Addional styling Work section on Mult-Post stories */
 #mult {
@@ -998,7 +998,7 @@ form .btn-press {
     padding: 24px;
     gap: 22px;
   }
-  
+
   .img-container:hover {
     cursor: default;
     transform: translateY(-5px);
