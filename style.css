@@ -461,52 +461,61 @@ form {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding: 30rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     margin-top: 5rem;
   }
 
   .alex {
-    padding: 100px 24px 0 24px;
     font-family: var(--header-font);
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
     letter-spacing: 0.37px;
     color: #091e42;
-    width: 30%;
+    width: 50%;
+    margin-top: 30rem;
   }
 
   .content {
     font-family: var(--header-font);
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 28px;
     color: #344563;
     margin-top: 12px;
-    width: 100%;
+    width: 50%;
+    display: flex;
+    text-align: start;
+    justify-content: flex-start;
   }
 
   .connect {
     font-family: var(--header-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 25px;
     line-height: 24px;
     color: #7f8cff;
     margin-top: 12px;
-    padding-left: 24px;
+    width: 51.5%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .socials {
-    display: flex;
-    padding-left: 24px;
-    widows: 50%;
+    width: 51.5%;
     gap: 20px;
-    padding-bottom: 106.04px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30rem;
+    font-size: 25px;
   }
 
   .socials li a {
