@@ -64,9 +64,10 @@ header nav .menu-icon {
 }
 
 .cont-1-sec-2 {
-  background-image: url(./portfolio-images/mobile-new.png);
+  background-image: url(./portfolio-images/Header-desktop.png);
   background-repeat: no-repeat;
-  background-position: cover;
+  background-size: contain;
+  background-position: bottom 95% right;
 }
 
 .alex {
@@ -255,6 +256,56 @@ header nav .menu-icon {
 }
 
 /* About Myself section */
+
+.alexa {
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  width: 65%;
+  padding-left: 24px;
+}
+
+.contenta {
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding: 0 24px 0 24px;
+  margin-top: 12px;
+}
+
+.connecta {
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-top: 12px;
+  padding-left: 24px;
+}
+
+.socialsa {
+  display: flex;
+  padding-left: 24px;
+  widows: 50%;
+  gap: 20px;
+  padding-bottom: 106.04px;
+}
+
+.socialsa li a {
+  text-decoration: none;
+  color: #505f79;
+}
+
+#socia {
+  padding-bottom: 12px;
+}
 
 .society {
   display: flex;
@@ -697,9 +748,60 @@ form {
   }
 
   .TOP {
+    padding-top: 100px;
     width: 40%;
     display: flex;
     flex-direction: column;
+  }
+
+  .alexa {
+    font-family: var(--header-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    width: 50%;
+    padding-left: 24px;
+  }
+
+  .contenta {
+    font-family: var(--header-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    padding: 0 24px 0 24px;
+    margin-top: 12px;
+  }
+
+  .connecta {
+    font-family: var(--header-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    margin-top: 12px;
+    padding-left: 24px;
+  }
+
+  .socialsa {
+    display: flex;
+    padding-left: 24px;
+    widows: 50%;
+    gap: 20px;
+    padding-bottom: 106.04px;
+  }
+
+  .socialsa li a {
+    text-decoration: none;
+    color: #505f79;
+  }
+
+  #socia {
+    padding-bottom: 12px;
   }
 
   .skills {
