@@ -15,7 +15,7 @@
 
 ## Link to the live page
 
-> Feel free to check the [Portfolio-link](https://github.com/Osoro254Alex/Mobile-Portfolio-Setup-Repo).
+> Feel free to check the [Portfolio-link](https://osoro254alex.github.io/Mobile-Portfolio-Setup-Repo/).
 
 ## Getting Started
 
