@@ -23,6 +23,7 @@ img {
   max-width: 100%;
 }
 
+h3,
 h2,
 h1 {
   margin: 0;
@@ -180,6 +181,7 @@ header nav .menu-icon {
   background: #f7f7f9;
   gap: 16px;
   align-items: center;
+  margin-right: 36px;
   font-family: var(--header-font);
   font-style: normal;
   font-weight: 500;
@@ -353,7 +355,7 @@ hr {
   background-position: top 65% right;
 }
 
-.contact-me h1 {
+.contact-me h2 {
   font-family: var(--header-font);
   font-style: normal;
   font-weight: 700;
@@ -381,6 +383,10 @@ form {
   gap: 20px;
 }
 
+label {
+  display: none;
+}
+
 .input {
   background: #fff;
   border: none;
@@ -394,12 +400,12 @@ form {
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #253858;
+  color: #0d0d0e;
   text-decoration: none;
 }
 
 .textarea {
-  color: #b3bac5;
+  color: #0d0d0e;
 }
 
 .last {
@@ -661,7 +667,7 @@ form {
     font-size: 15px;
     line-height: 20px;
     color: #253858;
-    width: 10%;
+    width: 15%;
   }
 
   .tech li:last-child {
@@ -853,7 +859,7 @@ form {
     background-position: top 65% right;
   }
 
-  .contact-me h1 {
+  .contact-me h2 {
     font-family: var(--header-font);
     font-style: normal;
     font-weight: 700;
@@ -894,12 +900,12 @@ form {
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #253858;
+    color: #0d0d0e;
     text-decoration: none;
   }
 
   .textarea {
-    color: #b3bac5;
+    color: #0d0d0e;
   }
 
   .last {
@@ -921,6 +927,10 @@ form {
   }
 
   .black-line {
+    display: none;
+  }
+
+  label {
     display: none;
   }
 }
