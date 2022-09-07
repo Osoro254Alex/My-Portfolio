@@ -2,13 +2,9 @@
 
 # Project: Mobile portfolio complete template-1
 
-> For the third milestone of your portfolio website,
-> Add a contact form to your portfolio and the portfolio of your coding partner.
-> Make sure that you guide your users' experience in a way that helps them fill in the form without frustration.
-> Prepare it for development using best practices (e.g. linters).
-> Build the 6 sections of the mobile website using the template you chose in the previous step.
+## In the sixth milestone of your portfolio website, you will:
 
-> This project is about setting up a Responsive Mobile Portfolio
+>Evaluate your website against accessibility best practices and implement any necessary changes to ensure that your website is accessible.
 
 # Project Screenshot image
 ![](./portfolio-images/Screenshot-Portfolio.png)
