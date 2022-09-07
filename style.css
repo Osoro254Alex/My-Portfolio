@@ -417,13 +417,13 @@ label {
 }
 
 .last:hover {
-  background-color: #6070ff;
+  background-color: #0918c0;
   color: #fff;
   border: 1px solid #fff;
 }
 
 .last:focus {
-  background: #2230d2;
+  background: #0b114d;
   color: #fff;
 }
 
@@ -918,13 +918,13 @@ label {
   }
 
   .last:hover {
-    background-color: #6070ff;
+    background-color: #0918c0;
     color: #fff;
     border: 1px solid #fff;
   }
 
   .last:focus {
-    background: #2230d2;
+    background: #0b114d;
     color: #fff;
   }
 
