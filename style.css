@@ -38,6 +38,7 @@ header {
   align-items: center;
   text-align: center;
   width: 100%;
+  padding-top: 15px;
 }
 
 header h3 a {
@@ -50,12 +51,12 @@ header h3 a {
   align-items: center;
   text-align: center;
   text-decoration: none;
-  color: #6070ff;
+  color: #344563;
   margin-left: 24px;
 }
 
 header nav .menu-icon {
-  color: #6070ff;
+  color: #344563;
   font-size: 18px;
   margin-right: 24px;
 }
@@ -162,7 +163,7 @@ header nav .menu-icon {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #344563;
 }
 
 .education li {
@@ -172,7 +173,7 @@ header nav .menu-icon {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #344563;
 }
 
 .subjects li {
@@ -187,7 +188,7 @@ header nav .menu-icon {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #253858;
+  color: #344563;
 }
 
 .tech li:last-child {
@@ -243,9 +244,10 @@ header nav .menu-icon {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #396df2;
-  border: 1px solid #6070ff;
+  color: #05153d;
+  border: 1px solid #05153d;
   margin-bottom: 8px;
+  background-color: #fff;
 }
 
 .gmr {
@@ -253,7 +255,7 @@ header nav .menu-icon {
 }
 
 .button:focus {
-  background: #2230d2;
+  background: #0f1ec5;
   color: #fff;
 }
 
@@ -287,7 +289,7 @@ header nav .menu-icon {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #344563;
   margin-top: 12px;
   padding-left: 24px;
 }
@@ -476,7 +478,7 @@ label {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    color: #6070ff;
+    color: #344563;
     margin: 25px 0 0 100px;
     animation-name: anime;
     animation-duration: 3s;
@@ -725,8 +727,8 @@ label {
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #396df2;
-    border: 1px solid #6070ff;
+    color: #05153d;
+    border: 1px solid #05153d;
     margin-bottom: 8px;
   }
 
@@ -735,13 +737,13 @@ label {
   }
 
   .button:hover {
-    background-color: #6070ff;
+    background-color: #0918c0;
     color: #fff;
-    border: 1px solid #6070ff;
+    border: 1px solid #0918c0;
   }
 
   .button:focus {
-    background: #2230d2;
+    background: #0b114d;
     color: #fff;
   }
 
