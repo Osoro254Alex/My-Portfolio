@@ -14,25 +14,27 @@
      <link rel="stylesheet" href="style.css">
     <title>Alex's Portfolio</title>
 </head>
-<body>
-  <section class="container-1">
-    <header>
-      <h3>
-        <a href="#">
-            My Logo
-        </a>
-      </h3>
-      <nav>
-        <div class="menu-icon">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="info">
-            <a href="#" id="po"><h3>Portoflio</h3></a>
-            <a href="#" id="ab"><h3>About</h3></a>
-            <a href="#" id="co"><h3>Contact</h3></a>
-        </div>
-     </nav>
-    </header>
+<body id="home" class="all-container">
+  <header class="header">
+    <h3>
+      <a href="#">
+          My Logo
+      </a>
+    </h3>
+    <nav>
+      <div>
+        <i class="menu-icon fas fa-bars"></i>
+      </div>
+      <div class="info">
+          <a class="co" id="cancel"><h3>&times;</h3></a>
+          <a class="co" href="#home"><h3>Home</h3></a>
+          <a class="co" href="#portfolio"><h3>Portfolio</h3></a>
+          <a class="co" href="#about"><h3>About</h3></a>
+          <a class="co" href="#contact"><h3>Contact</h3></a>
+      </div>
+   </nav>
+  </header>
+  <section class="container-1 sections">
     <section class="cont-1-sec-2">
       <h1 class="alex">
         I'm Alex Glad to see you!
@@ -74,7 +76,7 @@
   </section>
 
   <!-- Cards Section -->
-    <section class="container-2">
+    <section id="portfolio" class="container-2 sections">
     
       <div class="card-ones card">
         <img class="img" src="portfolio-images/SnapshootPortfolio-first.png" alt="Snapshoot Portfolio image">
@@ -212,7 +214,7 @@
     </section>
    
 
-<section class="society">
+<section id="about" class="society sections">
   <div class="TOP">
     <h2 class="alexa">
         About Myself
@@ -285,7 +287,7 @@
     </li>
   </ul>
 </section>
-<footer class="contact-me"> 
+<footer id="contact" class="contact-me sections"> 
   <h2>
     Contact me
   </h2>
@@ -305,5 +307,7 @@
   </form>
   <hr class="black-line">
 </footer>
+
+<script src="app.js"></script>
 </body>
 </html>
