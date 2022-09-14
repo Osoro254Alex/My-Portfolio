@@ -39,6 +39,10 @@ header {
   text-align: center;
   width: 100%;
   padding-top: 15px;
+  top: 0;
+  position: sticky;
+  background-color: white;
+  padding-bottom: 15px;
 }
 
 header h3 a {
@@ -55,7 +59,7 @@ header h3 a {
   margin-left: 24px;
 }
 
-header nav .menu-icon {
+.menu-icon {
   color: #344563;
   font-size: 18px;
   margin-right: 24px;
@@ -63,6 +67,60 @@ header nav .menu-icon {
 
 .info {
   display: none;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 9;
+  background: rgba(96, 112, 255, 0.7);
+  animation: scaleAnime 1s ease-in-out;
+}
+
+@keyframes scaleAnime {
+  0% {
+    transform: translateX(100%) scaleX(0);
+  }
+
+  100% {
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+.phone a {
+  text-decoration: none;
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  padding-left: 28px;
+}
+
+#cancel {
+  align-self: flex-end;
+  margin-right: 16px;
+  margin-top: 17px;
+  font-size: 40px;
+  border: none;
+  color: #fff;
+  background-color: rgba(96, 112, 255, 0.2);
+}
+
+.sections.active {
+  filter: blur(10px);
+  z-index: -1;
+  position: relative;
 }
 
 .cont-1-sec-2 {
@@ -108,7 +166,7 @@ header nav .menu-icon {
 .socials {
   display: flex;
   padding-left: 24px;
-  widows: 50%;
+  width: 50%;
   gap: 20px;
   padding-bottom: 106.04px;
 }
@@ -131,7 +189,8 @@ header nav .menu-icon {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 80px 0;
+  margin-top: 100px;
+  padding: 100px 0;
   gap: 88px;
 }
 
@@ -297,7 +356,7 @@ header nav .menu-icon {
 .socialsa {
   display: flex;
   padding-left: 24px;
-  widows: 50%;
+  width: 50%;
   gap: 20px;
   padding-bottom: 106.04px;
 }
@@ -316,6 +375,10 @@ header nav .menu-icon {
   flex-direction: column;
   gap: 24px;
   width: 100%;
+}
+
+.TOP {
+  padding-top: 100px;
 }
 
 .language {
@@ -494,7 +557,7 @@ label {
     }
   }
 
-  header nav .menu-icon {
+  .menu-icon {
     display: none;
   }
 
@@ -502,6 +565,10 @@ label {
     display: flex;
     gap: 30px;
     margin: 25px 100px 0 0;
+  }
+
+  #cancel {
+    display: none;
   }
 
   .info a {
@@ -512,6 +579,10 @@ label {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .container-1 {
+    height: 100vh;
   }
 
   .cont-1-sec-2 {
@@ -525,6 +596,7 @@ label {
     justify-content: center;
     text-align: center;
     margin-top: 5rem;
+    height: 100vh;
   }
 
   .alex {
@@ -621,7 +693,6 @@ label {
 
   .img:hover {
     cursor: default;
-    transform: translateY(-5px);
     border: 1px solid gray;
     box-shadow: 1px 2px 15px gray;
   }
@@ -799,7 +870,7 @@ label {
   .socialsa {
     display: flex;
     padding-left: 24px;
-    widows: 50%;
+    width: 50%;
     gap: 20px;
     padding-bottom: 106.04px;
   }
