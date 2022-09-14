@@ -83,7 +83,19 @@ header h3 a {
   cursor: pointer;
   z-index: 9;
   background: rgba(96, 112, 255, 0.7);
+  animation: scaleAnime 1s ease-in-out;
 }
+
+@keyframes scaleAnime {
+  0% {
+    transform: translateX(100%) scaleX(0);
+  }
+
+  100% {
+    transform: translateX(0) scaleX(1);
+  }
+}
+
 
 .phone a {
   text-decoration: none;
