@@ -15,3 +15,16 @@ function menuTransition() {
 }
 
 navSectionTwo.addEventListener('click', menuTransition);
+
+function removeMenu() {
+  if (navSectionOne.classList.contains('phone')) {
+    navSectionOne.classList.remove('phone');
+    sections.forEach((sect) => {
+      sect.classList.toggle('active');
+    });
+  }
+}
+
+links.forEach((link) => {
+  link.addEventListener('click', removeMenu);
+});
