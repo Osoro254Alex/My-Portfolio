@@ -249,3 +249,81 @@ windowPopup.addEventListener("click", (e)=>{
     });
    }
 })
+
+//Loads the popup card on click
+butt.addEventListener("click", (e)=>{
+  let klas = e.target.getAttribute("data-id");
+  popup.forEach(object =>{
+     if(klas === object["id"]){
+       windowPopup.innerHTML = `<div id="${object["id"]}" class="pop-up">
+       <div class="pop-head">
+         <h2 class="ton-del">
+         ${object["title"]}
+         </h2>
+         <button type="button" class="cancel butz">
+           ${object["cancel"]}
+         </button>
+       </div>
+       <ul class="education">
+         <li class="cano">
+           ${object["education"][0]}"
+         </li>
+         <li> <img src="${object["image"]["counter"]}" alt="counter image">${object["education"][1]}</li>
+         <li> <img src="${object["image"]["counter"]}" alt="counter image">${object["education"][2]}</li>
+       </ul>
+       <div>
+         <img class="pop-img" src="${object["image"]["mainImg"]}" alt="Snapshoot Portfolio image">
+       <div>
+         <div class="pop-bottom">
+           <p class="pop-para">
+             ${object["description"]}
+           </p>
+           <div class="sect-butns">
+             <div>
+               <ul class="tech javaht">
+                 <li>
+                     ${object["technologies"][0]}
+                 </li>
+                 <li>
+                     ${object["technologies"][1]}
+                 </li>
+                 <li>
+                     ${object["technologies"][2]}
+                 </li>
+             </ul>
+             <ul class="tech bootrap">
+                 <li>
+                     ${object["technologies2"][0]}
+                 </li>
+                 <li>
+                     ${object["technologies2"][1]}
+                 </li>
+                 <li>
+                     ${object["technologies2"][2]}
+                 </li>
+             </ul>
+             </div>
+             <hr class="single-line">
+             <nav class="pop-nav">
+             <a class="navii1" href="${object["navigation"]["live"]}" target="_blank">
+               <button class="pop-btn btn1 butz" type="button">
+               ${object["butn1"]}
+                 <img class="butz" src="${object["image"]["liveIcon"]}" alt="live-icon">
+               </button>
+             </a>
+             <a class="navii2" href="${object["navigation"]["source"]}" target="_blank">
+               <button class="pop-btn btn2 butz"  type="button">
+               ${object["butn2"]}
+               <img class="butz" src="${object["image"]["sourceIcon"]}" alt="github-icon">
+               </button>
+             </a>
+             </nav>
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>`;
+     pageTransition()
+     }
+  })
+ })
