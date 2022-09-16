@@ -39,7 +39,7 @@ const emailE = document.querySelector('#email');
 const form = document.querySelector('#forme');
 const error = document.querySelector('#error');
 
-// Check if email meets Requirements
+// Check if email meets Requirement
 function validator(emailAcquire) {
   if (emailAcquire.match(/^[a-z@.0-9-_]*$/)) {
     return true;
