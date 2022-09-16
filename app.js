@@ -230,7 +230,7 @@ cards.forEach(object => {
 
 
 
-//Add a pop Card on click see project
+//Add a popCard on click see project
 function pageTransition() {
   if (windowPopup.classList.contains('pop-body')) {
     windowPopup.classList.remove('pop-body');
