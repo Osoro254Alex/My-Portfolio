@@ -228,3 +228,24 @@ cards.forEach(object => {
   </div>`;
 })
 
+// Add a popCard on click see project
+function pageTransition() {
+  if (windowPopup.classList.contains('pop-body')) {
+    windowPopup.classList.remove('pop-body');
+  } else {
+    windowPopup.classList.add('pop-body');
+    sections.forEach((sect) => {
+      sect.classList.toggle('active');
+    });
+  }
+}
+//Removes the Popup on click close button and Navigate to see live and see source on click
+windowPopup.addEventListener("click", (e)=>{
+  let klas = e.target.classList.contains("butz");
+   if(klas){
+      windowPopup.classList.remove('pop-body');
+      sections.forEach((sect) => {
+      sect.classList.toggle('active');
+    });
+   }
+})
