@@ -39,24 +39,24 @@ const emailE = document.querySelector('#email');
 const form = document.querySelector('#forme');
 const error = document.querySelector('#error');
 
-//Check if email meets Requirements
+// Check if email meets Requirements
 function validator(emailAcquire) {
- if (emailAcquire.match(/^[a-z@.0-9-_]*$/)) {
-   return true;
- }
- return false;
+  if (emailAcquire.match(/^[a-z@.0-9-_]*$/)) {
+    return true;
+  }
+  return false;
 }
 
 // Message to display Depending on Email validation status
-form.addEventListener("submit", (e) => {
- if (validator(emailE.value)) {
-   error.textContent = '';
- } else {
-   e.preventDefault();
-   emailE.style.border = '3px solid red';
-   error.style.display = 'flex';
-   error.textContent = 'Error! Please Use Lowercase Email.';
- }
+form.addEventListener('submit', (e) => {
+  if (validator(emailE.value)) {
+    error.textContent = '';
+  } else {
+    e.preventDefault();
+    emailE.style.border = '3px solid red';
+    error.style.display = 'flex';
+    error.textContent = 'Error! Please Use Lowercase Email.';
+  }
 });
 
 // PopUp Window details
