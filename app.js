@@ -41,7 +41,7 @@ const error = document.querySelector('#error');
 
 // Check if email meets Requirement
 function validator(emailAcquire) {
-  if (emailAcquire.match(/^[a-z@.0-9-_]*$/)){
+  if (emailAcquire.match(/^[a-z@.0-9-_]*$/)) {
     return true;
   }
   return false;
@@ -60,9 +60,9 @@ function storag() {
 // Accessing data and loading it on the page
 const acquire = JSON.parse(localStorage.getItem('object'));
 
-  nameDate.value = acquire.name;
-  emailE.value = acquire.email;
-  messageData.value = acquire.message;
+nameDate.value = acquire.name;
+emailE.value = acquire.email;
+messageData.value = acquire.message;
 
 // Message to display Depending on Email validation status
 form.addEventListener('submit', (e) => {
