@@ -39,7 +39,7 @@ const emailE = document.querySelector('#email');
 const form = document.querySelector('#forme');
 const error = document.querySelector('#error');
 
-// Check if email meets Requirements
+// Check if email meets Requirement
 function validator(emailAcquire) {
   if (emailAcquire.match(/^[a-z@.0-9-_]*$/)) {
     return true;
@@ -47,11 +47,30 @@ function validator(emailAcquire) {
   return false;
 }
 
+const nameDate = document.querySelector('#name');
+const messageData = document.querySelector('#message');
+const emptyArr = {};
+
+function storag() {
+  emptyArr.name = nameDate.value;
+  emptyArr.email = emailE.value;
+  emptyArr.message = messageData.value;
+  localStorage.setItem('object', JSON.stringify(emptyArr));
+}
+// Accessing data and loading it on the page
+const acquire = JSON.parse(localStorage.getItem('object'));
+
+nameDate.value = acquire.name;
+emailE.value = acquire.email;
+messageData.value = acquire.message;
+
 // Message to display Depending on Email validation status
 form.addEventListener('submit', (e) => {
   if (validator(emailE.value)) {
     error.textContent = '';
+    storag();
   } else {
+    storag();
     e.preventDefault();
     emailE.style.border = '3px solid red';
     error.style.display = 'flex';
