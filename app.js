@@ -47,10 +47,27 @@ function validator(emailAcquire) {
   return false;
 }
 
+const nameDate = document.querySelector('#name');
+const messageData = document.querySelector('#message');
+const emptyArr = {};
+
+function storag() {
+  emptyArr.name = nameDate.value;
+  emptyArr.email = emailE.value;
+  emptyArr.message = messageData.value;
+  localStorage.setItem('object', JSON.stringify(emptyArr));
+}
+const acquire = JSON.parse(localStorage.getItem('object'));
+
+nameDate.onchange = acquire.name;
+emailE.onchange = acquire.email;
+messageData.onchange = acquire.message;
+
 // Message to display Depending on Email validation status
 form.addEventListener('submit', (e) => {
   if (validator(emailE.value)) {
     error.textContent = '';
+    storag();
   } else {
     e.preventDefault();
     emailE.style.border = '3px solid red';
