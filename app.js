@@ -57,6 +57,12 @@ function storag() {
   emptyArr.message = messageData.value;
   localStorage.setItem('object', JSON.stringify(emptyArr));
 }
+// Accessing data and loading it on the page
+const acquire = JSON.parse(localStorage.getItem('object'));
+
+  nameDate.value = acquire.name;
+  emailE.value = acquire.email;
+  messageData.value = acquire.message;
 
 // Message to display Depending on Email validation status
 form.addEventListener('submit', (e) => {
