@@ -47,22 +47,29 @@ function validator(emailAcquire) {
   return false;
 }
 
-const nameDate = document.querySelector('#name');
+const nameData = document.querySelector('#name');
 const messageData = document.querySelector('#message');
 const emptyArr = {};
 
 function storag() {
-  emptyArr.name = nameDate.value;
+  emptyArr.namee = nameData.value;
   emptyArr.email = emailE.value;
   emptyArr.message = messageData.value;
   localStorage.setItem('object', JSON.stringify(emptyArr));
 }
+
 // Accessing data and loading it on the page
 const acquire = JSON.parse(localStorage.getItem('object'));
 
-nameDate.value = acquire.name;
-emailE.value = acquire.email;
-messageData.value = acquire.message;
+if (acquire === null) {
+  nameData.value = '';
+  emailE.value = '';
+  messageData.value = '';
+} else {
+  nameData.value = acquire.namee;
+  emailE.value = acquire.email;
+  messageData.value = acquire.message;
+}
 
 // Message to display Depending on Email validation status
 form.addEventListener('submit', (e) => {
