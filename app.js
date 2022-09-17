@@ -70,6 +70,7 @@ form.addEventListener('submit', (e) => {
     error.textContent = '';
     storag();
   } else {
+    storag();
     e.preventDefault();
     emailE.style.border = '3px solid red';
     error.style.display = 'flex';
