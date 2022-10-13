@@ -1,4 +1,4 @@
-66![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project: Mobile portfolio complete template-1
 
