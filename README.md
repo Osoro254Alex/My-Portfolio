@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+66![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project: Mobile portfolio complete template-1
 
@@ -11,7 +11,7 @@
 
 ## Link to the live page
 
-> Feel free to check the [Portfolio-link](https://osoro254alex.github.io/Mobile-Portfolio-Setup-Repo/).
+> Feel free to check the [Portfolio-link](https://osoro254alex.github.io/My-Portfolio/).
 
 ## Getting Started
 
