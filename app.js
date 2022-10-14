@@ -91,7 +91,7 @@ form.addEventListener('submit', (e) => {
 const cards = [
   {
     id: 'cardOne',
-    title: 'Tonic',
+    title: 'Awesome Book',
     education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
     description: ' Microverse Module 02 Project: This is education project that allow user to add desire books to the list and also delete books. It makes use of local storage to preserve the data on the web browser',
     technologies: ['html5', 'css3', 'javascript', 'ES6'],
@@ -148,7 +148,7 @@ const cards = [
 const popup = [
   {
     id: 'cardOne',
-    title: 'Tonic',
+    title: 'Awesome Book',
     education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
     description: "Microverse Module 02 Project: This is education project that allow user to add desire books to the list and also delete books. It makes use of local storage to preserve the data on the web browser",
 
