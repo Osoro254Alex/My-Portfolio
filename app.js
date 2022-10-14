@@ -96,7 +96,7 @@ const cards = [
     description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     image: {
-      mainImg: 'portfolio-images/SnapshootPortfolio-first.png',
+      mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_.png',
       counter: './portfolio-images/Counter.png',
     },
     button: 'See Project',
@@ -155,7 +155,7 @@ const popup = [
     technologies: ['html', 'css', 'javascript'],
     technologies2: ['github', 'ruby', 'Bootstrap'],
     image: {
-      mainImg: 'portfolio-images/SnapshootPortfolio-first.png',
+      mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_.png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
