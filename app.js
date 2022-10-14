@@ -93,10 +93,10 @@ const cards = [
     id: 'cardOne',
     title: 'Tonic',
     education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javascript'],
+    description: ' Microverse Module 02 Project: This is education project that allow user to add desire books to the list and also delete books. It makes use of local storage to preserve the data on the web browser',
+    technologies: ['html5', 'css3', 'javascript', 'ES6'],
     image: {
-      mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_.png',
+      mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_ (1).png',
       counter: './portfolio-images/Counter.png',
     },
     button: 'See Project',
@@ -150,12 +150,12 @@ const popup = [
     id: 'cardOne',
     title: 'Tonic',
     education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description: "Microverse Module 02 Project: This is education project that allow user to add desire books to the list and also delete books. It makes use of local storage to preserve the data on the web browser",
 
-    technologies: ['html', 'css', 'javascript'],
+    technologies: ['html5', 'css3', 'javascript', 'React'],
     technologies2: ['github', 'ruby', 'Bootstrap'],
     image: {
-      mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_.png',
+      mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_ (1).png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
@@ -164,8 +164,8 @@ const popup = [
     butn2: 'See Source',
     cancel: '&times;',
     navigation: {
-      live: 'https://osoro254alex.github.io/Mobile-Portfolio-Setup-Repo/',
-      source: 'https://github.com/Osoro254Alex/Mobile-Portfolio-Setup-Repo',
+      live: 'https://osoro254alex.github.io/Awesome-Book/',
+      source: 'https://github.com/Osoro254Alex/Awesome-Book',
     },
   },
 
