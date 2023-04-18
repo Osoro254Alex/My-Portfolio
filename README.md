@@ -11,7 +11,7 @@
 
 ## Link to the live page
 
-> Feel free to check the [Portfolio-link](https://osoro254alex.github.io/Mobile-Portfolio-Setup-Repo/).
+> Feel free to check the [Portfolio-link](https://osoro254alex.github.io/My-Portfolio/).
 
 ## Getting Started
 
@@ -27,7 +27,7 @@
 
 ## Built with
 
-- HTML & CSS
+- HTML, CSS & JAVASCRIPT 
 
 ## Authors
 
@@ -39,7 +39,9 @@
 ## Collaborators
 Rebecca Nabwire
 -GitHub[@Becky449](https://github.com/Becky449)
-
+-GitHub[@mansa-susa](https://github.com/mansa-susa)
+-GitHub[@Diana-Duya](https://github.com/Diana-Duya)
+Diana-Duya
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

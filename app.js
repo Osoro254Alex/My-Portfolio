@@ -3,6 +3,8 @@ const navSectionTwo = document.querySelector('.menu-icon'); // menu-icon
 const links = document.querySelectorAll('.co'); // navigation class list
 const sections = document.querySelectorAll('.sections'); // sections classlist
 const windowPopup = document.querySelector('.window-popup');// container containiing the popup
+const downloadBtn = document.querySelector('.gmr');
+
 const butt = document.querySelector('.all-container'); // general body contain
 const bigContainer = document.getElementById('portfolio'); // container for the cards
 
@@ -17,6 +19,11 @@ function menuTransition() {
     });
   }
 }
+
+const resumeFile = 'portfolio-images/Resume.pdf';
+downloadBtn.addEventListener('click', () => {
+  window.open(resumeFile, '_blank');
+});
 
 navSectionTwo.addEventListener('click', menuTransition);
 
@@ -34,18 +41,70 @@ links.forEach((link) => {
   link.addEventListener('click', removeMenu);
 });
 
+// Email validation
+const emailE = document.querySelector('#email');
+const form = document.querySelector('#forme');
+const error = document.querySelector('#error');
+
+// Check if email meets Requirement
+function validator(emailAcquire) {
+  if (emailAcquire.match(/^[a-z@.0-9-_]*$/)) {
+    return true;
+  }
+  return false;
+}
+
+const nameData = document.querySelector('#name');
+const messageData = document.querySelector('#message');
+const emptyArr = {};
+
+function storag() {
+  emptyArr.namee = nameData.value;
+  emptyArr.email = emailE.value;
+  emptyArr.message = messageData.value;
+  localStorage.setItem('object', JSON.stringify(emptyArr));
+}
+
+// Accessing data and loading it on the page
+const acquire = JSON.parse(localStorage.getItem('object'));
+
+if (acquire === null) {
+  nameData.value = '';
+  emailE.value = '';
+  messageData.value = '';
+} else {
+  nameData.value = acquire.namee;
+  emailE.value = acquire.email;
+  messageData.value = acquire.message;
+}
+
+// Message to display Depending on Email validation status
+form.addEventListener('submit', (e) => {
+  if (validator(emailE.value)) {
+    error.textContent = '';
+    storag();
+  } else {
+    storag();
+    e.preventDefault();
+    emailE.style.border = '3px solid red';
+    error.style.display = 'flex';
+    error.textContent = 'Error! Please Use Lowercase Email.';
+  }
+});
+
 // PopUp Window details
 
 // All Cards data
 const cards = [
   {
     id: 'cardOne',
-    title: 'Tonic',
-    education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javascript'],
+    title: 'Awesome Book',
+    education: ['CANOPY', '&nbsp; Front End Dev', '&nbsp; 2022'],
+    description:
+      ' Microverse Module 02 Project: This is education project that allow user to add desire books to the list and also delete books. It makes use of local storage to preserve the data on the web browser',
+    technologies: ['html5', 'css3', 'javascript', 'ES6'],
     image: {
-      mainImg: 'portfolio-images/SnapshootPortfolio-first.png',
+      mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_ (1).png',
       counter: './portfolio-images/Counter.png',
     },
     button: 'See Project',
@@ -53,12 +112,14 @@ const cards = [
 
   {
     id: 'cardTwo',
-    title: 'Multi-Post Stories',
-    education: ['FACEBOOK', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    technologies: ['html', 'css', 'javascript'],
+    title: 'Capstone3-World-Countries',
+    education: ['FACEBOOK', '&nbsp; Back End Dev', '&nbsp; 2022'],
+    description: `This React capstone project is about building a mobile web application to check a list of metrics that you will create making use of React and Redux.
+    In this simple React Web Application developed to display a list of countries and their details fetched from an API. the project makes use of key React features such as Redux, Thunk and Loggers.
+    [World-Countries ] is a simple project based on data from the globe. An API populates data about countries in a specific regioned and data is rendered through react functions.`,
+    technologies: ['html', 'css', 'javascript', 'ES6'],
     image: {
-      mainImg: 'portfolio-images/desktop-2.png',
+      mainImg: 'portfolio-images/world-country.png',
       counter: './portfolio-images/Counter.png',
     },
     button: 'See Project',
@@ -67,12 +128,12 @@ const cards = [
 
   {
     id: 'cardThree',
-    title: 'Facebook 360',
+    title: 'Space Traveller\'s Hub',
     education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    description: 'Space Travellers Hub is a web application that provides commercial and scientific space travel services. We designed the website to allow users to book rockets and join selected space missions. The website may also use real-time data from the SpaceX API to provide information on upcoming launches and available rockets for booking. The website is likely to cater to both individual space enthusiasts and organizations interested in space exploration.',
     technologies: ['html', 'css', 'javascript'],
     image: {
-      mainImg: 'portfolio-images/desktop-middle.png',
+      mainImg: 'portfolio-images/space-travel.png',
       counter: './portfolio-images/Counter.png',
     },
     button: 'See Project',
@@ -80,12 +141,13 @@ const cards = [
 
   {
     id: 'cardfour',
-    title: 'Uber Navigation',
+    title: 'Delicious Meals',
     education: ['Uber', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A meal web app that retrieves data from an API could provide users with access to a vast library of recipes and nutritional information. Users can browse through the recipes, filter them based on their dietary requirements, or search for specific ingredients. The app can also provide a video link to show users how the meal is prepared step-by-step.',
     technologies: ['html', 'css', 'javascript'],
     image: {
-      mainImg: 'portfolio-images/desktop-last.png',
+      mainImg: 'portfolio-images/delicious-meal.png',
       counter: './portfolio-images/Counter.png',
     },
     button: 'See Project',
@@ -97,14 +159,15 @@ const cards = [
 const popup = [
   {
     id: 'cardOne',
-    title: 'Tonic',
+    title: 'Awesome Book',
     education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description:
+      'Microverse Module 02 Project: This is education project that allow user to add desire books to the list and also delete books. It makes use of local storage to preserve the data on the web browser',
 
-    technologies: ['html', 'css', 'javascript'],
+    technologies: ['html5', 'css3', 'javascript', 'React'],
     technologies2: ['github', 'ruby', 'Bootstrap'],
     image: {
-      mainImg: 'portfolio-images/SnapshootPortfolio-first.png',
+      mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_ (1).png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
@@ -113,21 +176,23 @@ const popup = [
     butn2: 'See Source',
     cancel: '&times;',
     navigation: {
-      live: 'https://osoro254alex.github.io/Mobile-Portfolio-Setup-Repo/',
-      source: 'https://github.com/Osoro254Alex/Mobile-Portfolio-Setup-Repo',
+      live: 'https://osoro254alex.github.io/Awesome-Book/',
+      source: 'https://github.com/Osoro254Alex/Awesome-Book',
     },
   },
 
   {
     id: 'cardTwo',
-    title: 'Multi-Post Stories',
+    title: 'Capstone3-World-Countries',
     education: ['FACEBOOK', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description: `This React capstone project is about building a mobile web application to check a list of metrics that you will create making use of React and Redux.
+    In this simple React Web Application developed to display a list of countries and their details fetched from an API. the project makes use of key React features such as Redux, Thunk and Loggers.
+    [World-Countries ] is a simple project based on data from the globe. An API populates data about countries in a specific regioned and data is rendered through react functions.`,
 
-    technologies: ['html', 'css', 'javascript'],
+    technologies: ['html', 'css', 'javascript', 'React & Redux'],
     technologies2: ['github', 'ruby', 'Bootstrap'],
     image: {
-      mainImg: 'portfolio-images/desktop-2.png',
+      mainImg: 'portfolio-images/world-country.png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
@@ -136,21 +201,21 @@ const popup = [
     butn2: 'See Source',
     cancel: '&times;',
     navigation: {
-      live: 'https://osoro254alex.github.io/Mobile-Portfolio-Setup-Repo/',
-      source: 'https://github.com/Osoro254Alex/Mobile-Portfolio-Setup-Repo',
+      live: 'https://explore-the-world-countries.netlify.app/',
+      source: 'https://github.com/Osoro254Alex/Capstone3-World-Countries-',
     },
   },
 
   {
     id: 'cardThree',
-    title: 'Facebook 360',
+    title: 'Space Traveller\'s Hub',
     education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description: 'Space Travellers Hub is a web application that provides commercial and scientific space travel services. We designed the website to allow users to book rockets and join selected space missions. The website may also use real-time data from the SpaceX API to provide information on upcoming launches and available rockets for booking. The website is likely to cater to both individual space enthusiasts and organizations interested in space exploration.',
 
-    technologies: ['html', 'css', 'javascript'],
+    technologies: ['html', 'css', 'javascript', 'React & Redux'],
     technologies2: ['github', 'ruby', 'Bootstrap'],
     image: {
-      mainImg: 'portfolio-images/desktop-middle.png',
+      mainImg: 'portfolio-images/space-travel.png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
@@ -159,21 +224,22 @@ const popup = [
     butn2: 'See Source',
     cancel: '&times;',
     navigation: {
-      live: 'https://osoro254alex.github.io/Mobile-Portfolio-Setup-Repo/',
-      source: 'https://github.com/Osoro254Alex/Mobile-Portfolio-Setup-Repo',
+      live: 'https://space-travel-hubs.netlify.app/',
+      source: 'https://github.com/Osoro254Alex/Space-Travel-s-Hub',
     },
   },
 
   {
     id: 'cardfour',
-    title: 'Uber Navigation',
-    education: ['Uber', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    title: 'Delicious Meals',
+    education: ['Uber', '&nbsp; Back End Dev', '&nbsp; 2022'],
+    description:
+      'A meal web app that retrieves data from an API could provide users with access to a vast library of recipes and nutritional information. Users can browse through the recipes, filter them based on their dietary requirements, or search for specific ingredients. The app can also provide a video link to show users how the meal is prepared step-by-step.',
 
     technologies: ['html', 'css', 'javascript'],
     technologies2: ['github', 'ruby', 'Bootstrap'],
     image: {
-      mainImg: 'portfolio-images/desktop-last.png',
+      mainImg: 'portfolio-images/delicious-meal.png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
@@ -182,8 +248,8 @@ const popup = [
     butn2: 'See Source',
     cancel: '&times;',
     navigation: {
-      live: 'https://osoro254alex.github.io/Mobile-Portfolio-Setup-Repo/',
-      source: 'https://github.com/Osoro254Alex/Mobile-Portfolio-Setup-Repo',
+      live: 'https://osoro254alex.github.io/Delicious-Meals/',
+      source: 'https://github.com/Osoro254Alex/Delicious-Meals',
     },
   },
 ];
