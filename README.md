@@ -11,7 +11,7 @@
 
 ## Link to the live page
 
-> Feel free to check the [Portfolio-link](https://osoro254alex.github.io/My-Portfolio/).
+> Feel free to check the [Portfolio-link](https://ogetoportfoliowebsite.netlify.app/).
 
 ## Getting Started
 
