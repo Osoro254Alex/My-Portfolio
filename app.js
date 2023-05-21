@@ -99,9 +99,9 @@ const cards = [
   {
     id: 'cardOne',
     title: 'Awesome Book',
-    education: ['CANOPY', '&nbsp; Front End Dev', '&nbsp; 2022'],
+    education: ['Microverse', '&nbsp; Web Dev', '&nbsp; 2022'],
     description:
-      ' Microverse Module 02 Project: This is education project that allow user to add desire books to the list and also delete books. It makes use of local storage to preserve the data on the web browser',
+      'The Awesome Book project is a web application designed to provide users with a platform to discover, explore, and discuss <span class="more"> a wide range of books. The application aims to create an engaging and user-friendly experience that encourages reading, facilitates book recommendations, and fosters a vibrant community of book enthusiasts.The Awesome Book project aims to create a comprehensive and interactive platform that encourages reading, facilitates book discovery, and promotes meaningful discussions among book lovers. By providing a seamless user experience, personalized recommendations, and a vibrant community, the app inspires users to explore new books, broaden their literary horizons, and connect with others who share their passion for reading.</span>',
     technologies: ['html5', 'css3', 'javascript', 'ES6'],
     image: {
       mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_ (1).png',
@@ -112,12 +112,12 @@ const cards = [
 
   {
     id: 'cardTwo',
-    title: 'Capstone3-World-Countries',
-    education: ['FACEBOOK', '&nbsp; Back End Dev', '&nbsp; 2022'],
-    description: `This React capstone project is about building a mobile web application to check a list of metrics that you will create making use of React and Redux.
+    title: 'World-Countries',
+    education: ['Microverse', '&nbsp; Web Dev', '&nbsp; 2022'],
+    description: `This React capstone project is about building a mobile web application to check a list of metrics that you will create <span class="more"> making use of React and Redux.
     In this simple React Web Application developed to display a list of countries and their details fetched from an API. the project makes use of key React features such as Redux, Thunk and Loggers.
-    [World-Countries ] is a simple project based on data from the globe. An API populates data about countries in a specific regioned and data is rendered through react functions.`,
-    technologies: ['html', 'css', 'javascript', 'ES6'],
+    [World-Countries ] is a simple project based on data from the globe. An API populates data about countries in a specific regioned and data is rendered through react functions.</span>`,
+    technologies: ['html', 'css', 'javascript', 'ES6', 'React&Redux'],
     image: {
       mainImg: 'portfolio-images/world-country.png',
       counter: './portfolio-images/Counter.png',
@@ -128,10 +128,11 @@ const cards = [
 
   {
     id: 'cardThree',
-    title: 'Space Traveller\'s Hub',
-    education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: 'Space Travellers Hub is a web application that provides commercial and scientific space travel services. We designed the website to allow users to book rockets and join selected space missions. The website may also use real-time data from the SpaceX API to provide information on upcoming launches and available rockets for booking. The website is likely to cater to both individual space enthusiasts and organizations interested in space exploration.',
-    technologies: ['html', 'css', 'javascript'],
+    title: "Space Traveller's Hub",
+    education: ['Microverse', '&nbsp; Web Dev', '&nbsp; 2022'],
+    description:
+      'Space Travellers Hub is a web application that provides commercial and scientific space travel services. We designed the <span class="more"> website to allow users to book rockets and join selected space missions. The website may also use real-time data from the SpaceX API to provide information on upcoming launches and available rockets for booking. The website is likely to cater to both individual space enthusiasts and organizations interested in space exploration.</span>',
+    technologies: ['html', 'css', 'javascript', 'ES6', 'React&redux'],
     image: {
       mainImg: 'portfolio-images/space-travel.png',
       counter: './portfolio-images/Counter.png',
@@ -142,16 +143,30 @@ const cards = [
   {
     id: 'cardfour',
     title: 'Delicious Meals',
-    education: ['Uber', '&nbsp; Back End Dev', '&nbsp; 2015'],
+    education: ['Microverse', '&nbsp; Web Dev', '&nbsp; 2022'],
     description:
-      'A meal web app that retrieves data from an API could provide users with access to a vast library of recipes and nutritional information. Users can browse through the recipes, filter them based on their dietary requirements, or search for specific ingredients. The app can also provide a video link to show users how the meal is prepared step-by-step.',
-    technologies: ['html', 'css', 'javascript'],
+      'A meal web app that retrieves data from an API could provide users with access to a vast library of recipes and nutritional information. Users <span class="more"> can browse through the recipes, filter them based on their dietary requirements, or search for specific ingredients. The app can also provide a video link to show users how the meal is prepared step-by-step.</span>',
+    technologies: ['html', 'css', 'javascript', 'ES6', 'webpack'],
     image: {
       mainImg: 'portfolio-images/delicious-meal.png',
       counter: './portfolio-images/Counter.png',
     },
     button: 'See Project',
     orderClas: 'card-twos',
+  },
+
+  {
+    id: 'cardfive',
+    title: 'Budget Application',
+    education: ['Microverse', '&nbsp; Back Dev Dev', '&nbsp; 2022'],
+    description:
+      'The Budget App is a user-friendly mobile application designed to help individuals manage their personal finances effectively. The app <span class="more"> aims to provide a comprehensive and intuitive platform for users to track their income, expenses, and savings, allowing them to make informed financial decisions and achieve their financial goals.Overall, the Budget App aims to empower individuals with a comprehensive financial management tool that simplifies the process of budgeting, tracking expenses, and achieving financial stability. By providing insightful analytics and personalized features, the app assists users in making informed financial decisions and fostering responsible money management habits.</span>',
+    technologies: ['html', 'css', 'javascript', 'RubyonRails'],
+    image: {
+      mainImg: 'portfolio-images/budget.png',
+      counter: './portfolio-images/Counter.png',
+    },
+    button: 'See Project',
   },
 ];
 
@@ -160,19 +175,19 @@ const popup = [
   {
     id: 'cardOne',
     title: 'Awesome Book',
-    education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
+    education: ['Microverse', '&nbsp; Front End Dev', '&nbsp; 2022'],
     description:
       'Microverse Module 02 Project: This is education project that allow user to add desire books to the list and also delete books. It makes use of local storage to preserve the data on the web browser',
 
-    technologies: ['html5', 'css3', 'javascript', 'React'],
-    technologies2: ['github', 'ruby', 'Bootstrap'],
+    technologies: ['html5', 'css3', 'javascript'],
+    technologies2: ['github'],
     image: {
       mainImg: 'portfolio-images/osoro254alex.github.io_Awesome-Book_ (1).png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
     },
-    butn1: 'See live',
+    butn1: 'See Live',
     butn2: 'See Source',
     cancel: '&times;',
     navigation: {
@@ -183,21 +198,21 @@ const popup = [
 
   {
     id: 'cardTwo',
-    title: 'Capstone3-World-Countries',
-    education: ['FACEBOOK', '&nbsp; Back End Dev', '&nbsp; 2015'],
+    title: 'World-Countries',
+    education: ['Microverse', '&nbsp; Front End Dev', '&nbsp; 2022'],
     description: `This React capstone project is about building a mobile web application to check a list of metrics that you will create making use of React and Redux.
     In this simple React Web Application developed to display a list of countries and their details fetched from an API. the project makes use of key React features such as Redux, Thunk and Loggers.
     [World-Countries ] is a simple project based on data from the globe. An API populates data about countries in a specific regioned and data is rendered through react functions.`,
 
-    technologies: ['html', 'css', 'javascript', 'React & Redux'],
-    technologies2: ['github', 'ruby', 'Bootstrap'],
+    technologies: ['html5', 'css3', 'javascript', 'React&Redux'],
+    technologies2: ['github'],
     image: {
       mainImg: 'portfolio-images/world-country.png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
     },
-    butn1: 'See live',
+    butn1: 'See Live',
     butn2: 'See Source',
     cancel: '&times;',
     navigation: {
@@ -208,12 +223,13 @@ const popup = [
 
   {
     id: 'cardThree',
-    title: 'Space Traveller\'s Hub',
-    education: ['CANOPY', '&nbsp; Back End Dev', '&nbsp; 2015'],
-    description: 'Space Travellers Hub is a web application that provides commercial and scientific space travel services. We designed the website to allow users to book rockets and join selected space missions. The website may also use real-time data from the SpaceX API to provide information on upcoming launches and available rockets for booking. The website is likely to cater to both individual space enthusiasts and organizations interested in space exploration.',
+    title: "Space Traveller's Hub",
+    education: ['Microverse', '&nbsp; Front End Dev', '&nbsp; 2022'],
+    description:
+      'Space Travellers Hub is a web application that provides commercial and scientific space travel services. We designed the website to allow users to book rockets and join selected space missions. The website may also use real-time data from the SpaceX API to provide information on upcoming launches and available rockets for booking. The website is likely to cater to both individual space enthusiasts and organizations interested in space exploration.',
 
-    technologies: ['html', 'css', 'javascript', 'React & Redux'],
-    technologies2: ['github', 'ruby', 'Bootstrap'],
+    technologies: ['html5', 'css3', 'javascript', 'React&Redux'],
+    technologies2: ['github'],
     image: {
       mainImg: 'portfolio-images/space-travel.png',
       counter: './portfolio-images/Counter.png',
@@ -232,19 +248,19 @@ const popup = [
   {
     id: 'cardfour',
     title: 'Delicious Meals',
-    education: ['Uber', '&nbsp; Back End Dev', '&nbsp; 2022'],
+    education: ['Microverse', '&nbsp; Front End Dev', '&nbsp; 2022'],
     description:
       'A meal web app that retrieves data from an API could provide users with access to a vast library of recipes and nutritional information. Users can browse through the recipes, filter them based on their dietary requirements, or search for specific ingredients. The app can also provide a video link to show users how the meal is prepared step-by-step.',
 
-    technologies: ['html', 'css', 'javascript'],
-    technologies2: ['github', 'ruby', 'Bootstrap'],
+    technologies: ['html5', 'css3', 'javascript', 'webpack'],
+    technologies2: ['github'],
     image: {
       mainImg: 'portfolio-images/delicious-meal.png',
       counter: './portfolio-images/Counter.png',
       liveIcon: './portfolio-images/see-live.png',
       sourceIcon: './portfolio-images/see-source.png',
     },
-    butn1: 'Seelive',
+    butn1: 'See Live',
     butn2: 'See Source',
     cancel: '&times;',
     navigation: {
@@ -252,42 +268,56 @@ const popup = [
       source: 'https://github.com/Osoro254Alex/Delicious-Meals',
     },
   },
+
+  {
+    id: 'cardfive',
+    title: 'Budget Application',
+    education: ['Microverse', '&nbsp; Back End Dev', '&nbsp; 2022'],
+    description:
+      'The Budget App is a user-friendly mobile application designed to help individuals manage their personal finances effectively. The app aims to provide a comprehensive and intuitive platform for users to track their income, expenses, and savings, allowing them to make informed financial decisions and achieve their financial goals.Overall, the Budget App aims to empower individuals with a comprehensive financial management tool that simplifies the process of budgeting, tracking expenses, and achieving financial stability. By providing insightful analytics and personalized features, the app assists users in making informed financial decisions and fostering responsible money management habits',
+
+    technologies: ['html', 'css', 'javascript'],
+    technologies2: ['github', 'rubyonRails', 'Tailwind'],
+    image: {
+      mainImg: 'portfolio-images/budget.png',
+      counter: './portfolio-images/Counter.png',
+      liveIcon: './portfolio-images/see-live.png',
+      sourceIcon: './portfolio-images/see-source.png',
+    },
+    butn1: 'See Live',
+    butn2: 'See Source',
+    cancel: '&times;',
+    navigation: {
+      live: 'https://osoro.onrender.com/',
+      source: 'https://github.com/Osoro254Alex/Budget-App',
+    },
+  },
 ];
 
 // Loading All the cards online when the webpage Loads
 cards.forEach((object) => {
-  bigContainer.innerHTML += `<div class="card">
-  <img class="img ${object.orderClas}" src="${object.image.mainImg}" alt="Snapshoot Portfolio image">
-  <div class="sec-content">
-  <h2 class="ton-del">
-   ${object.title}
-  </h2>
-  <ul class="education">
-  <li class="cano">
-    ${object.education[0]}
-  </li>
-  <li> <img src="${object.image.counter}" alt="counter image">${object.education[1]}</li>
-  <li> <img src="${object.image.counter}" alt="counter image">${object.education[2]}</li>
-  </ul>
-  <p>
-    ${object.description}
-  </p>
-  <ul class="tech">
-      <li>
-        ${object.technologies[0]}
-      </li>
-      <li>
-         ${object.technologies[1]}
-      </li>
-      <li>
-         ${object.technologies[2]}
-      </li>
-  </ul>
-  <button data-id="${object.id}" class="button" type="button">
-    ${object.button}
-  </button>
-  </div>
-  </div>`;
+  const technologies = object.technologies
+    .map((technology) => `<li>${technology}</li>`)
+    .join('');
+
+  bigContainer.innerHTML += `
+    <div class="card">
+      <img class="img ${object.orderClas}" src="${object.image.mainImg}" alt="Snapshoot Portfolio image">
+      <div class="sec-content">
+        <h2 class="ton-del">${object.title}</h2>
+        <ul class="education">
+          <li class="cano">${object.education[0]}</li>
+          <li><img src="${object.image.counter}" alt="counter image">${object.education[1]}</li>
+          <li><img src="${object.image.counter}" alt="counter image">${object.education[2]}</li>
+        </ul>
+        <p>${object.description}<strong>. . . .</strong><span class="reading">Read more</span></p>
+        <ul class="tech">
+          ${technologies}
+        </ul>
+        <button data-id="${object.id}" class="button" type="button">${object.button}</button>
+      </div>
+    </div>
+  `;
 });
 
 // Add a popCard on click see project
@@ -316,6 +346,12 @@ windowPopup.addEventListener('click', (e) => {
 butt.addEventListener('click', (e) => {
   const klas = e.target.getAttribute('data-id');
   popup.forEach((object) => {
+    const technologiesList1 = object.technologies
+      .map((tech) => `<li>${tech}</li>`)
+      .join('');
+    const technologiesList2 = object.technologies2
+      .map((tech) => `<li>${tech}</li>`)
+      .join('');
     if (klas === object.id) {
       windowPopup.innerHTML = `<div id="${object.id}" class="pop-up">
        <div class="pop-head">
@@ -343,26 +379,10 @@ butt.addEventListener('click', (e) => {
            <div class="sect-butns">
              <div>
                <ul class="tech javaht">
-                 <li>
-                     ${object.technologies[0]}
-                 </li>
-                 <li>
-                     ${object.technologies[1]}
-                 </li>
-                 <li>
-                     ${object.technologies[2]}
-                 </li>
+                ${technologiesList1}
              </ul>
              <ul class="tech bootrap">
-                 <li>
-                     ${object.technologies2[0]}
-                 </li>
-                 <li>
-                     ${object.technologies2[1]}
-                 </li>
-                 <li>
-                     ${object.technologies2[2]}
-                 </li>
+                ${technologiesList2}
              </ul>
              </div>
              <hr class="single-line">
@@ -388,4 +408,24 @@ butt.addEventListener('click', (e) => {
       pageTransition();
     }
   });
+  // Display More
+  if (e.target.classList.contains('reading')) {
+    e.target.parentElement.children[0].classList.toggle('more');
+    if (!e.target.parentElement.children[0].classList.contains('more')) {
+      e.target.parentElement.children[2].innerText = 'Show less';
+      e.target.parentElement.children[1].style.display = 'none';
+    } else {
+      e.target.parentElement.children[2].innerText = 'Read More';
+      e.target.parentElement.children[1].style.display = 'inline-block';
+    }
+  }
+
+  if (e.target.dataset.show === 'true') {
+    if (e.target.parentElement.parentElement.children[1].classList.contains('displayer')) {
+      e.target.parentElement.parentElement.children[0].children[0].className = 'fas fa-chevron-down';
+    } else {
+      e.target.parentElement.parentElement.children[0].children[0].className = 'fas fa-chevron-right';
+    }
+    e.target.parentElement.parentElement.children[1].classList.toggle('displayer');
+  }
 });
