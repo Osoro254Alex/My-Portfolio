@@ -1,4 +1,3 @@
-
 :root {
   --header-font: "Poppins";
 }
@@ -513,8 +512,9 @@ header h3 a {
   width: 100%;
 }
 
-/* About Myself section */
+/* Pop-up window****************** */
 
+/* About Myself section */
 .alexa {
   font-family: var(--header-font);
   font-style: normal;
