@@ -353,6 +353,7 @@ butt.addEventListener('click', (e) => {
       .map((tech) => `<li>${tech}</li>`)
       .join('');
     if (klas === object.id) {
+      
       windowPopup.innerHTML = `<div id="${object.id}" class="pop-up">
        <div class="pop-head">
          <h2 class="ton-del">
