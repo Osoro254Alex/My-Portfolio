@@ -293,14 +293,14 @@ const popup = [
     },
   },
 ];
-
+let holder;
 // Loading All the cards online when the webpage Loads
 cards.forEach((object) => {
   const technologies = object.technologies
     .map((technology) => `<li>${technology}</li>`)
     .join('');
 
-  bigContainer.innerHTML += `
+  holder += `
     <div class="card">
       <img class="img ${object.orderClas}" src="${object.image.mainImg}" alt="Snapshoot Portfolio image">
       <div class="sec-content">
@@ -320,6 +320,7 @@ cards.forEach((object) => {
   `;
 });
 
+bigContainer.innerHTML = holder;
 // Add a popCard on click see project
 function pageTransition() {
   if (windowPopup.classList.contains('pop-body')) {
@@ -345,6 +346,7 @@ windowPopup.addEventListener('click', (e) => {
 // Loads the popup card on click
 butt.addEventListener('click', (e) => {
   const klas = e.target.getAttribute('data-id');
+  let popHolder;
   popup.forEach((object) => {
     const technologiesList1 = object.technologies
       .map((tech) => `<li>${tech}</li>`)
@@ -353,7 +355,7 @@ butt.addEventListener('click', (e) => {
       .map((tech) => `<li>${tech}</li>`)
       .join('');
     if (klas === object.id) {
-      windowPopup.innerHTML = `<div id="${object.id}" class="pop-up">
+     popHolder = `<div id="${object.id}" class="pop-up">
        <div class="pop-head">
          <h2 class="ton-del">
          ${object.title}
@@ -408,6 +410,8 @@ butt.addEventListener('click', (e) => {
       pageTransition();
     }
   });
+
+  windowPopup.innerHTML = popHolder;
   // Display More
   if (e.target.classList.contains('reading')) {
     e.target.parentElement.children[0].classList.toggle('more');
@@ -422,9 +426,9 @@ butt.addEventListener('click', (e) => {
 
   if (e.target.dataset.show === 'true') {
     if (e.target.parentElement.parentElement.children[1].classList.contains('displayer')) {
-      e.target.parentElement.parentElement.children[0].children[0].className = 'fas fa-chevron-down';
+      e.target.className = 'fas fa-chevron-down';
     } else {
-      e.target.parentElement.parentElement.children[0].children[0].className = 'fas fa-chevron-right';
+      e.target.className = 'fas fa-chevron-right';
     }
     e.target.parentElement.parentElement.children[1].classList.toggle('displayer');
   }

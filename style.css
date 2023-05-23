@@ -118,6 +118,16 @@ header h3 a {
   animation: scaleAnime 1s ease-in-out;
 }
 
+@-webkit-keyframes scaleAnime {
+  0% {
+    transform: translateX(100%) scaleX(0);
+  }
+
+  100% {
+    transform: translateX(0) scaleX(1);
+  }
+}
+
 @keyframes scaleAnime {
   0% {
     transform: translateX(100%) scaleX(0);
@@ -868,6 +878,16 @@ label {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
+  }
+
+  @-webkit-keyframes anime {
+    from {
+      transform: rotate(360deg);
+    }
+
+    to {
+      transform: rotate(90deg);
+    }
   }
 
   @keyframes anime {
