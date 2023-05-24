@@ -92,6 +92,7 @@ header h3 a {
 }
 
 .reading {
+  cursor: pointer;
   font-size: 0.7rem;
   padding: 0.1rem;
   color: #0918c0;
