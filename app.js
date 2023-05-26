@@ -293,7 +293,7 @@ const popup = [
     },
   },
 ];
-let holder;
+let holder = '';
 // Loading All the cards online when the webpage Loads
 cards.forEach((object) => {
   const technologies = object.technologies
