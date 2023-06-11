@@ -668,6 +668,7 @@ header h3 a {
   display: flex;
   justify-content: space-between;
   width: 85%;
+  padding: .2rem 1rem .2rem 0;
   margin-bottom: 36px;
   font-family: var(--header-font);
   font-style: normal;
@@ -1464,6 +1465,7 @@ label {
     display: flex;
     justify-content: space-between;
     width: 85%;
+    padding: .2rem 1rem .2rem 0;
     margin-bottom: 36px;
     font-family: var(--header-font);
     font-style: normal;

@@ -20,7 +20,7 @@ function menuTransition() {
   }
 }
 
-const resumeFile = 'portfolio-images/Resume.pdf';
+const resumeFile = 'portfolio-images/Alex Resume 2023.pdf';
 downloadBtn.addEventListener('click', () => {
   window.open(resumeFile, '_blank');
 });
@@ -425,11 +425,11 @@ butt.addEventListener('click', (e) => {
   }
 
   if (e.target.dataset.show === 'true') {
-    if (e.target.parentElement.parentElement.children[1].classList.contains('displayer')) {
-      e.target.className = 'fas fa-chevron-down';
+    if (e.target.parentElement.children[1].classList.contains('displayer')) {
+      e.target.children[0].className = 'fas fa-chevron-down';
     } else {
-      e.target.className = 'fas fa-chevron-right';
+      e.target.children[0].className = 'fas fa-chevron-right';
     }
-    e.target.parentElement.parentElement.children[1].classList.toggle('displayer');
+    e.target.parentElement.children[1].classList.toggle('displayer');
   }
 });
